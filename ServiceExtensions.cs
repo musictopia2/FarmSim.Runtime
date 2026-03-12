@@ -17,6 +17,7 @@ public static class ServiceExtensions
                 .AddSingleton<WorkshopStartingOptions>()
                 .AddSingleton<WorksiteStartingOptions>()
                 .AddSingleton<AchievementsStartingOptionsService>()
+                .AddSingleton<IAutomatedStartingInventoryProvider ,DefaultAutomatedStartingInventoryProvider>()
                 .AddSingleton<GiftLedgerService>()
                 ;
             return services;
